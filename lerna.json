@@ -5,7 +5,8 @@
   "version": "independent",
   "command": {
     "version": {
-      "allowBranch": "release"
+      "allowBranch": "release",
+      "message": "chore(release): release"
     }
   }
 }

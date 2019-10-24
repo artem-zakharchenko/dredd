@@ -11,7 +11,7 @@
     "lint": "lerna exec --scope=\"*\" --concurrency=1 --no-bail yarn lint",
     "test:smoke": "lerna exec --scope=\"*\" --concurrency=1 --no-bail yarn test:smoke",
     "test": "lerna exec --scope=\"*\" --concurrency=1 --no-bail yarn test",
-    "release": "git checkout -b release && lerna version --conventional-commits --exact --no-push --no-changelog --no-git-tag-version && git commit -am 'chore(release): publish' && git push -u origin release",
+    "release": "git checkout -b release && git push -u origin release && lerna version --conventional-commits --exact --no-changelog --noTags",
     "release:end": "lerna publish from-git"
   },
   "devDependencies": {
